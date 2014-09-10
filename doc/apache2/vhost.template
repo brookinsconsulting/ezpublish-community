@@ -24,7 +24,7 @@
     # Environment.
     # Possible values: "prod" and "dev" out-of-the-box, other values possible with proper configuration
     # Defaults to "prod" if omitted (uses SetEnvIf so value can be used in rewrite rules)
-    SetEnvIf Request_URI .*  ENVIRONMENT="%ENV%"
+    SetEnvIf Request_URI ".*"  ENVIRONMENT=%ENV%
 
     # Whether to use Symfony's ApcClassLoader.
     # Possible values: 0 or 1

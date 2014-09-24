@@ -57,9 +57,6 @@
     <IfModule mod_rewrite.c>
         RewriteEngine On
 
-        # CVE-2012-6432
-        RewriteRule ^/_internal - [R=403,L]
-
         # Uncomment in FastCGI mode or when using PHP-FPM, to get basic auth working.
         RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
